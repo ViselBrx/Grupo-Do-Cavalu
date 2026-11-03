@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionário | Grupo do Cavalu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="tema-flamengo">
+    <main class="pagina">
+      <section class="cartao" aria-labelledby="titulo">
+        <p class="sobretitulo">GRUPO DO CAVALU</p>
+        <h1 id="titulo">Questionário grupo</h1>
+        <p class="introducao">Escolha o tema do seu time e responda:</p>
+
+        <div class="temas" aria-label="Escolha o tema">
+          <button type="button" class="tema ativo" data-tema="flamengo">Flamengo</button>
+          <button type="button" class="tema" data-tema="vasco">Vasco</button>
+          <button type="button" class="tema" data-tema="corinthians">Corinthians</button>
+          <button type="button" class="tema" data-tema="cruzeiro">Cruzeiro</button>
+        </div>
+
+        <form id="questionario">
+          <div class="campo">
+            <label for="alien">Quem sou eu?</label>
+            <select id="alien" name="membro_escolhido" required>
+              <option value="" disabled selected>Selecione</option>
+              <option value="Arthur">Arthur</option>
+              <option value="Cavalu">Cavalu</option>
+              <option value="Francisco">Francisco</option>
+              <option value="João Garcia">João Garcia</option>
+              <option value="Pedro">Pedro (Drex)</option>
+              <option value="Rhavi">Rhavi (Loli)</option>
+              <option value="Salomão">Salomão</option>
+              <option value="Visel">Visel (criador)</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="ano-entrada">Qual seu ano de entrada do clube?</label>
+            <select id="ano-entrada" name="ano_entrada" required>
+              <option value="" disabled selected>Selecione</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mais-gosta">De qual membro você mais gosta?</label>
+            <input id="mais-gosta" name="membro_mais_gosta" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="menos-gosta">De qual membro você menos gosta?</label>
+            <input id="menos-gosta" name="membro_menos_gosta" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="neutro">Qual membro você considera mais neutro?</label>
+            <input id="neutro" name="membro_neutro" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="melhor-lembranca">Qual foi a melhor lembrança?</label>
+            <input id="melhor-lembranca" name="melhor_lembranca" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="menor-lembranca">Qual foi a pior lembrança?</label>
+            <input id="menor-lembranca" name="menor_lembranca" type="text" required />
+          </div>
+
+          <button class="enviar" type="submit">Enviar respostas</button>
+          <p id="mensagem" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
