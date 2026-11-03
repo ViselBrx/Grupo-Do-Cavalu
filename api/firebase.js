@@ -1,4 +1,3 @@
-// Firebase Web SDK via CDN: funciona em um site estático, sem XAMPP.
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import {
   addDoc,
